@@ -80,9 +80,6 @@ DATABASES = {
         'CLIENT': {
             'host': 'localhost',
             'port': 27017,
-            'username': 'your_username',
-            'password': 'your_password',
-            'authSource': 'admin',
         }
     }
 }
