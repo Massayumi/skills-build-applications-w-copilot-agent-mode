@@ -75,10 +75,13 @@ WSGI_APPLICATION = "octofit_tracker.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',  # MongoDB database engine
-        'NAME': 'octofit_db',  # Database name
-        'HOST': 'localhost',  # Host address
-        'PORT': 27017,  # Port number
+        'ENGINE': 'djongo',
+        'NAME': 'octofit_db',
+        'ENFORCE_SCHEMA': True,  # Optional: Enforce schema validation
+        'CLIENT': {
+            'host': 'localhost',
+            'port': 27017,
+        },
     }
 }
 
